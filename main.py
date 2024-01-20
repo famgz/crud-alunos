@@ -7,6 +7,8 @@ from utils import json_
 source_path = Path(__file__).resolve().parent
 sys.path.insert(0, str(source_path.parent))
 
+Path(source_path, 'data').mkdir(parents=True, exist_ok=True)
+
 data_path = Path(source_path, 'data', 'data_alunos.json')
 
 
